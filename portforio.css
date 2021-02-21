@@ -1,0 +1,476 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+h2{
+  line-height: 40px;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+  margin: 0;
+  padding: 15px;
+  font-size: 100%;
+  background: transparent;
+  display: block;
+}
+
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+/* リセットCSS終わり */
+
+
+/* 以下SPとPC共通 */
+
+body{
+  height:300vh;
+}
+
+.cover-img{
+  background-image: url(images/157158_m.jpg);
+  background-position: center;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+
+.cover-text{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
+.pc_nav{
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+
+
+.pc_nav li a{
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  color: #333;
+}
+
+.pc_nav li a:visited {
+  color:#333; 
+  background:#bbb; 
+}
+
+.pc_nav li a:hover{
+  color:rgb(252, 246, 246); 
+  background:#777; 
+  transition: 0.6s ease all;
+}
+
+.Btn:hover:before{
+  transform: scale(4.2);
+}
+
+.about_area{
+  max-width: calc(100% - 40px);
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 450px;
+}
+
+.about_area img{
+  float: left;
+}
+
+.about_area  p{
+  display:flex;
+  padding-left: 20px;
+}
+
+
+.portforio_aria {
+  text-align: center;
+  margin: 50px 0;
+  clear: both;
+}
+
+.skill_araa{
+  text-align: center;
+}
+
+.skill_araa ul{
+  text-align: left;
+}
+
+.skill_araa_container{
+  width:calc(100% - 35%);
+  margin: 0 auto;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item{
+  width: 30%;
+}
+
+.item li {
+  list-style: none;
+}
+
+.txtm{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:15px;
+}
+
+.under-margin{
+  margin-bottom: 70px;
+}
+
+.item img{
+  vertical-align: middle;
+}
+
+.framework img{
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+.fade-in{ 
+  font-size:30px;
+  opacity:0;
+  animation-name:sample01;
+  animation-duration:5s; 
+  animation-fill-mode: forwards;
+}
+
+
+.container {
+  padding: 1.5% 8%;
+}
+
+form > p, .container > p {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+label {
+  padding-top: 7px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+/* contact.html */
+.require_item {
+  background-color: #ff0000;
+  color: #fff;
+  text-align: center;
+  width: 62.5%;
+  padding: 3.75% 0;
+  float: right;
+}
+
+.error_msg {
+  font-size: 14px;
+  color: #ff0000;
+  height: 14px;
+}
+
+/* confirm.html */
+.display_item {
+  padding: 7px 0;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #000;
+  border: solid 0.5px rgb(173, 173, 173);
+  background-color: #f7f7f7;
+  padding: 3.5px 20px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* thanks.html */
+.thanks_msg {
+  text-align: center;
+  background-color: #c8fbff;
+  padding:20px 0 50px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/* 以下SP限定表示 */
+@media only screen and (max-width: 480px){
+
+  header a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+
+  }
+
+
+  main{
+    /*flex: 1;*/
+    width: 700px;
+    margin: 0 auto;
+  
+  }
+  
+  aside{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 250px;
+  }
+  
+  
+  ul{
+  list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  div{
+    height: 300px;
+    margin-top: auto;
+  }
+  
+  .open,
+  .close{
+  display: none;
+  }
+  
+  input[type="checkbox"]{
+  position: absolute;
+    left: -50vw;
+  }
+  
+  .portforio_aria {
+    text-align: center;
+    margin: 50px 0;
+    clear: both;
+    height: 500px;
+}
+ 
+
+
+.cover-img {
+  height: 535px;
+}
+
+
+.about_area img{
+      width: 150px;
+    }
+
+.about_area{
+      height:550px;
+    }
+.portforio_aria img{
+    width: 180px;
+  } 
+
+
+.cover-text p {
+    font-size: 60px;
+    color: #808080;
+    text-align: center;}
+
+  .pc_nav{
+      display: none;
+    }
+}
+
+
+
+
+
+/* 以下SP以上のサイズで変える項目 */
+@media only screen and (min-width: 480px){
+
+  header{
+    display: none;
+  }
+
+
+  .pc_nav ul{
+    display:flex;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    justify-content: center;
+  
+  }
+
+  .cover-text p{
+    font-size: 120px;
+    font-family: sans-serif;
+    color:#808080;
+  }
+  .cover-img{
+    height: 700px;
+  }
+  
+}
+
+ 
+@media screen and (max-width:1000px){
+  main{
+    width: 100%;
+    padding-top:50px ;
+  }
+
+
+.open,
+.close{
+  display: block;
+}
+
+.open{
+  position: absolute;
+}
+
+aside{
+  position: absolute;
+  left: -250px;
+  height: 530px;
+  transition: all 0.2s;
+  background-color: #ffffff;
+  
+}
+
+input[type="checkbox"]:checked ~ aside{
+  left:0;
+}
+
+input[type="checkbox"]:checked ~ .back{
+  position: absolute;
+  width: 100%;
+  height: 530px;
+  background-color: rgba(0, 0, 0, 0.8)!important;
+}
+
+}
+
+
+
+@keyframes sample01 {
+0% {
+ opacity: 0;
+ transform: translateY(-30px);
+}
+  50%{
+    opacity: 1;
+     transform: translateY(0);
+  }
+ 100% {
+ opacity:100;
+ } 
+}
